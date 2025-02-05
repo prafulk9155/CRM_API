@@ -4,8 +4,7 @@ const customerRoutes = require('./src/routes/customerRoutes');
 const leadRoutes= require('./src/routes/leadRoutes')
 const dealRoutes= require('./src/routes/dealRoutes')
 const contactRoutes = require('./src/routes/contactRoutes')
-// const taskRoutes= require('./src/routes/taskRoutes')
-// const companyRoutes= require('./src/routes/companyRoutes')
+
 
 
 const app = express();
@@ -16,11 +15,10 @@ app.use('/customer', customerRoutes);
 app.use('/lead', leadRoutes)
 app.use('/deal', dealRoutes)
 app.use('/contact', contactRoutes)
-// app.use('/task', taskRoutes)
-// app.use('/company', companyRoutes)
+
 
 app.get('/', (req, res) => {
-  res.send('Welcome to the API');
+  res.send('Welcome to the CRM API');
 });
 
 
